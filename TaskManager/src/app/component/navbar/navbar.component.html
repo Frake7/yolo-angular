@@ -1,0 +1,74 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Task Manager</a>
+    <div class="d-flex">
+      <button
+        class="btn btn-outline-warning me-2"
+        (click)="openCategoryModal()"
+      >
+        Add Category
+      </button>
+      <button class="btn btn-outline-success" (click)="openTaskModal()">Add Task</button>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div
+  class="modal fade"
+  id="taskModal"
+  tabindex="-1"
+  aria-labelledby="taskModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add/Edit Task</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <app-task-form
+  [task]="selectedTaskForEdit"
+  (taskSaved)="onTaskSaved()"
+></app-task-form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div
+  class="modal fade"
+  id="categoryModal"
+  tabindex="-1"
+  aria-labelledby="categoryModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add/Edit Category</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <app-category-form
+  [categoryToEdit]="selectedCategoryForEdit"
+  (categorySaved)="onCategorySaved()"
+></app-category-form>
+      </div>
+    </div>
+  </div>
+</div>

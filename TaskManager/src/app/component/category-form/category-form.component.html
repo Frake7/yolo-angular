@@ -1,0 +1,24 @@
+<div class="card mt-4">
+  <div class="card-header">Add/Edit Category</div>
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit()" #categoryForm="ngForm" class="row g-3">
+      <input
+        name="title"
+        type="text"
+        class="form-control"
+        placeholder="Category Title"
+        [(ngModel)]="category.title"
+        required
+      />
+      <textarea
+        name="description"
+        class="form-control mt-2"
+        placeholder="Category Description"
+        [(ngModel)]="category.description"
+      ></textarea>
+      <div class="col-12 text-end mt-3">
+        <button class="btn btn-success" [disabled]="!categoryForm.form.valid">Save Category</button>
+      </div>
+    </form>
+  </div>
+</div>

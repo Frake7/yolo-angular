@@ -1,0 +1,186 @@
+{
+  "tasks": [
+    {
+      "id": "4",
+      "title": "Write unit tests for component",
+      "description": "Cover main UI components with tests",
+      "dueDate": 1761436800,
+      "status": 2,
+      "categoryId": "4"
+    },
+    {
+      "id": "5",
+      "title": "Create onboarding docs",
+      "description": "Document developer onboarding process",
+      "dueDate": 1731888000,
+      "status": 1,
+      "categoryId": "5"
+    },
+    {
+      "id": "6",
+      "title": "Fix bugs in dashboard",
+      "description": "Resolve UI glitches and data loading issues",
+      "dueDate": 1762500000,
+      "status": 3,
+      "categoryId": "1"
+    },
+    {
+      "id": "7",
+      "title": "Setup CI/CD pipeline",
+      "description": "Automate build and deploy process",
+      "dueDate": 1743000000,
+      "status": 2,
+      "categoryId": "6"
+    },
+    {
+      "id": "8",
+      "title": "Yolo task - Review code",
+      "description": "Perform code review for new features",
+      "dueDate": 1763500000,
+      "status": 1,
+      "categoryId": "7"
+    },
+    {
+      "id": "9",
+      "title": "Yolo task - Write tests",
+      "description": "Add test cases for yolo module",
+      "dueDate": 1764000000,
+      "status": 1,
+      "categoryId": "7"
+    },
+    {
+      "id": "10",
+      "title": "Optimize performance",
+      "description": "Improve load times and memory usage",
+      "dueDate": 1764500000,
+      "status": 2,
+      "categoryId": "8"
+    },
+    {
+      "id": "11",
+      "title": "Update user profile UI",
+      "description": "Make profile page more user-friendly",
+      "dueDate": 1765000000,
+      "status": 1,
+      "categoryId": "2"
+    },
+    {
+      "id": "12",
+      "title": "Implement notifications",
+      "description": "Show alerts for important events",
+      "dueDate": 1765500000,
+      "status": 3,
+      "categoryId": "3"
+    },
+    {
+      "id": "13",
+      "title": "Create reusable UI components",
+      "description": "Buttons, modals, inputs",
+      "dueDate": 1766000000,
+      "status": 1,
+      "categoryId": "4"
+    },
+    {
+      "id": "14",
+      "title": "Write documentation for API",
+      "description": "Document all REST endpoints",
+      "dueDate": 1766500000,
+      "status": 1,
+      "categoryId": "5"
+    },
+    {
+      "id": "15",
+      "title": "Refactor legacy code",
+      "description": "Improve maintainability of old modules",
+      "dueDate": 1767000000,
+      "status": 2,
+      "categoryId": "6"
+    },
+    {
+      "id": "16",
+      "title": "Design new feature mockups",
+      "description": "UX/UI for upcoming release",
+      "dueDate": 1747440000,
+      "status": 1,
+      "categoryId": "2"
+    },
+    {
+      "id": "17",
+      "title": "Conduct user interviews",
+      "description": "Gather feedback on new UI",
+      "dueDate": 1768000000,
+      "status": 3,
+      "categoryId": "9"
+    },
+    {
+      "id": "18",
+      "title": "Yolo task - Finalize deployment",
+      "description": "Ensure smooth launch of project",
+      "dueDate": 1768500000,
+      "status": 2,
+      "categoryId": "7"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "title": "Bug Fixes",
+      "description": "Tasks related to fixing bugs"
+    },
+    {
+      "id": "2",
+      "title": "UI/UX Design",
+      "description": "Tasks related to design and user experience"
+    },
+    {
+      "id": "3",
+      "title": "Backend",
+      "description": "Backend development tasks"
+    },
+    {
+      "id": "4",
+      "title": "Testing",
+      "description": "Unit and integration tests"
+    },
+    {
+      "id": "5",
+      "title": "Documentation",
+      "description": "Writing documentation and guides"
+    },
+    {
+      "id": "6",
+      "title": "DevOps",
+      "description": "Deployment and infrastructure"
+    },
+    {
+      "id": "7",
+      "title": "Yolo Tasks",
+      "description": "Special tasks for the Yolo project"
+    },
+    {
+      "id": "8",
+      "title": "Performance",
+      "description": "Performance optimization tasks"
+    },
+    {
+      "id": "9",
+      "title": "Research",
+      "description": "User research and feedback collection"
+    },
+    {
+      "id": "10",
+      "title": "Accessibility",
+      "description": "Improving accessibility of the app"
+    },
+    {
+      "id": "11",
+      "title": "Marketing",
+      "description": "Marketing related tasks"
+    },
+    {
+      "id": "12",
+      "title": "Customer Support",
+      "description": "Support and help desk tasks"
+    }
+  ]
+}

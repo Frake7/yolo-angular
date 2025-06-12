@@ -1,0 +1,75 @@
+<div class="card mt-4">
+  <div class="card-header">Add/Edit New Task</div>
+  <div class="card-body">
+    <form class="row g-3" (ngSubmit)="submitForm()" #taskForm="ngForm">
+      <div class="col-md-6">
+        <input 
+          type="text" 
+          class="form-control" 
+          placeholder="Task Title" 
+          required 
+          name="title"
+          [(ngModel)]="task.title"
+          #title="ngModel"
+        >
+        <div *ngIf="title.invalid && title.touched" class="text-danger">
+          Title is required
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <input 
+          type="date" 
+          class="form-control" 
+          placeholder="Due Date" 
+          name="dueDate"
+          [(ngModel)]="task.dueDate"
+        >
+      </div>
+
+      <div class="col-md-6">
+        <select 
+          class="form-select" 
+          name="status"
+          [(ngModel)]="task.status"
+          required
+        >
+          <option [ngValue]="1">To Do</option>
+          <option [ngValue]="2">In Progress</option>
+          <option [ngValue]="3">Done</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <select 
+          class="form-select" 
+          name="category"
+          [(ngModel)]="task.categoryId"
+          required
+        >
+          <option [ngValue]="null">Select Category</option>
+          <option *ngFor="let cat of categories" [ngValue]="cat.id">{{ cat.title }}</option>
+        </select>
+      </div>
+
+      <div class="col-12">
+        <textarea 
+          class="form-control" 
+          placeholder="Task Description" 
+          name="description"
+          [(ngModel)]="task.description"
+        ></textarea>
+      </div>
+
+      <div class="col-12 text-end">
+        <button 
+          type="submit" 
+          class="btn btn-success" 
+          [disabled]="taskForm.invalid"
+        >
+          <i class="fas fa-plus"></i> Add/Edit Task
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

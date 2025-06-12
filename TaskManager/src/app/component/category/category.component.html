@@ -1,0 +1,30 @@
+<div class="category-item position-relative" [id]="category.id">
+  <span class="text-dark">{{ category.title }}</span>
+
+  <div class="category-actions btn-group btn-group-sm">
+    <button
+      class="btn"
+      [ngClass]="category.id === selectedCategoryId ? 'btn-primary' : 'btn-outline-secondary'"
+      title="Select"
+      (click)="selectCategory()"
+    >
+      <i
+        class="bi bi-chevron-double-down"
+        [style.color]="category.id === selectedCategoryId ? 'black' : 'inherit'"
+      ></i>
+    </button>
+
+    <div class="btn btn-outline-warning position-relative description-wrapper">
+      <i class="bi bi-eye"></i>
+      <div class="description-panel">{{ category.description }}</div>
+    </div>
+
+    <button class="btn btn-outline-primary" title="Edit" (click)="onEditClick()">
+      <i class="bi bi-pen"></i>
+    </button>
+
+    <button class="btn btn-outline-danger" title="Delete" (click)="onDeleteClick()">
+      <i class="bi bi-trash"></i>
+    </button>
+  </div>
+</div>
